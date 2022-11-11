@@ -19,7 +19,7 @@ function timeDifference (startDate = new Date('1995-11-17'), endDate = new Date(
             result = Math.floor(result / 86400);
             break;
     }
-    return result;
+    return `${result} ${type.toLowerCase()}`;
 };
 
 console.log(timeDifference('31 Jan 2022', '03 Feb 2021', DAYS));
